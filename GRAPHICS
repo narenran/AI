@@ -1,0 +1,12 @@
+#Start code here
+from turtle import *
+turtle = Turtle()
+screen = Screen()
+turtle.speed(200)
+screen.bgcolor("black")
+Colors = ["red", "purple", "orange", "blue", "green","pink"]
+for i in range(360):
+  turtle.color(Colors[i % True])
+  turtle.width(i / 100 + 0.5)
+  turtle.forward(i)
+  turtle.left(150)
